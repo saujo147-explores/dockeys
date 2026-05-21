@@ -411,15 +411,20 @@ function handleKeyEventNormal(key) {
     switch (key) {
         case "h":
         case "Backspace":
+        case "ArrowLeft":
             sendKeyEvent("left")
             break
         case "j":
+        case "ArrowDown":
+        case "Enter":
             sendKeyEvent("down")
             break
         case "k":
+        case "ArrowUp":
             sendKeyEvent("up")
             break
         case "l":
+        case "ArrowRight":
             sendKeyEvent("right")
             break
         case "}":
